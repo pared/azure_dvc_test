@@ -1,7 +1,6 @@
 #!/bin/bash
 set -ex
 
-mkdir repo
-pushd repo
-mkdir -p .dvc/cache
-dvc version
+git clone https://github.com/iterative/example-versioning.git
+pushd example-versioning
+dvc status
