@@ -15,9 +15,9 @@ steps:
   inputs:
     command: build
     Dockerfile: Dockerfile
-- script: git --version && wget --version
-  displayName: 'install git and wget'
-- script: ./get_and_install.sh
-  displayName: 'install dvc'
-- script: ./mkrepo.sh
-  displayName: 'prepare repo folder and check version'
+# - script: git --version && wget --version
+#   displayName: 'install git and wget'
+# - script: ./get_and_install.sh
+#   displayName: 'install dvc'
+# - script: ./mkrepo.sh
+#   displayName: 'prepare repo folder and check version'
