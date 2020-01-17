@@ -12,9 +12,9 @@ pool:
 container: debian:9.11
 
 steps:
-- script: /bin/bash install_preq.sh
+- script: ./install_preq.sh
   displayName: 'install git and wget'
-- script: /bin/bash get_and_install.sh
+- script: ./get_and_install.sh
   displayName: 'install dvc'
-- script: /bin/bash mkrepo.sh
+- script: ./mkrepo.sh
   displayName: 'prepare repo folder and check version'
