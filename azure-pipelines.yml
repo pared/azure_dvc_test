@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'debian-9.11'
+  vmImage: 'debian-latest'
 
 steps:
 - script: /bin/bash get_and_install.sh
