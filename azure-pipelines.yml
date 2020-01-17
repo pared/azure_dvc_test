@@ -12,3 +12,5 @@ pool:
 steps:
 - script: ./get_and_install.sh
   displayName: 'install dvc'
+- script: ./mkrepo.sh
+  displayName: 'prepare repo folder and check version'
