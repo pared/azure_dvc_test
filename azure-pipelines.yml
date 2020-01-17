@@ -12,7 +12,7 @@ pool:
 container: debian:9.11
 
 steps:
-- script: ./install_preq.sh
+- script: git --version && wget --version
   displayName: 'install git and wget'
 - script: ./get_and_install.sh
   displayName: 'install dvc'
