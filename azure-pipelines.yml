@@ -7,9 +7,13 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-18.04'
+
+container: debian:9.11
 
 steps:
+- script: /bin/bash install_preq.sh
+  displayName: 'install git and wget'
 - script: /bin/bash get_and_install.sh
   displayName: 'install dvc'
 - script: /bin/bash mkrepo.sh
