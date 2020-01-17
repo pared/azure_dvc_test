@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-17.04'
 
 steps:
 - script: /bin/bash get_and_install.sh
