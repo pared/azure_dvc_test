@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: ./get_and_install.sh
+- script: /bin/bash get_and_install.sh
   displayName: 'install dvc'
-- script: ./mkrepo.sh
+- script: /bin/bash mkrepo.sh
   displayName: 'prepare repo folder and check version'
